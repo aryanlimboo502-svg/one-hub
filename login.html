@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f7f5ee">
+    <title>OneHub | Sign in</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js" defer></script>
+</head>
+<body>
+    <main class="login-shell">
+        <section class="auth-card" id="auth-card" aria-label="OneHub account access">
+            <div class="auth-forms">
+                <form class="auth-form sign-in-form" aria-labelledby="signin-title">
+                    <a class="brand" href="home.html" aria-label="Return to One Hub Travel home">
+                        <span class="brand-mark" aria-hidden="true"><img src="logo.jpeg" alt=""></span>
+                    </a>
+                    <p class="eyebrow">Welcome back</p>
+                    <h1 id="signin-title">Sign in</h1>
+                    <p class="form-intro">Access your account and pick up where you left off.</p>
+
+                    <label for="signin-email">Email address</label>
+                    <input id="signin-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+
+                    <label for="signin-password">Password</label>
+                    <input id="signin-password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" required>
+
+                    <div class="form-options">
+                        <label class="remember-me" for="remember-me">
+                            <input id="remember-me" name="remember" type="checkbox">
+                            <span>Remember me</span>
+                        </label>
+                        <a href="#">Forgot password?</a>
+                    </div>
+
+                    <button class="primary-button" type="submit">Sign in</button>
+                    <p class="form-status" role="status" aria-live="polite"></p>
+                    <p class="mobile-switch">New to OneHub? <button type="button" data-show-register>Create an account</button></p>
+                </form>
+
+                <form class="auth-form sign-up-form" aria-labelledby="signup-title">
+                    <a class="brand" href="home.html" aria-label="Return to One Hub Travel home">
+                        <span class="brand-mark" aria-hidden="true"><img src="logo.jpeg" alt=""></span>
+                    </a>
+                    <p class="eyebrow">Get started</p>
+                    <h1 id="signup-title">Create account</h1>
+                    <p class="form-intro">Join OneHub and keep everything in one place.</p>
+
+                    <label for="signup-name">Full name</label>
+                    <input id="signup-name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
+
+                    <label for="signup-email">Email address</label>
+                    <input id="signup-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+
+                    <label for="signup-password">Create password</label>
+                    <input id="signup-password" name="password" type="password" placeholder="At least 8 characters" autocomplete="new-password" minlength="8" required>
+
+                    <button class="primary-button" type="submit">Create account</button>
+                    <p class="form-status" role="status" aria-live="polite"></p>
+                    <p class="mobile-switch">Already have an account? <button type="button" data-show-login>Sign in</button></p>
+                </form>
+            </div>
+
+            <div class="welcome-panel" aria-live="polite">
+                <div class="welcome-content welcome-signin">
+                    <span class="panel-orb" aria-hidden="true"></span>
+                    <p class="eyebrow">Your space, connected</p>
+                    <h2>Everything starts here.</h2>
+                    <p>One account. One simple place for what matters to you.</p>
+                    <button class="outline-button" type="button" data-show-register>Create an account</button>
+                </div>
+                <div class="welcome-content welcome-signup">
+                    <span class="panel-orb" aria-hidden="true"></span>
+                    <p class="eyebrow">Good to have you</p>
+                    <h2>Welcome back.</h2>
+                    <p>Sign in to return to your OneHub space.</p>
+                    <button class="outline-button" type="button" data-show-login>Sign in</button>
+                </div>
+            </div>
+        </section>
+        <p class="page-note">A more connected experience, with OneHub.</p>
+    </main>
+</body>
+</html>
